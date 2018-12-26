@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title formUpload-teneocto
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="/bootstrap/css/bootstrap.css")
+    script(src="/jquery/dist/jquery.js")
+    script(src="/bootstrap/js/bootstrap.js")
+  body
+    block content
+    script.
+        var data = !{JSON.stringify(data)};
+    script(src="/javascript/script.js")
