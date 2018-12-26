@@ -159,7 +159,6 @@ function okClick(product,id) {
     product.find("input").remove
     product.find(`.data-category select`).remove();
 
-
     product.find(`.data-name`).text(editData.name);
     product.find(`.data-description`).text(editData.description);
     product.find(`.data-category` ).text(editData.category);
