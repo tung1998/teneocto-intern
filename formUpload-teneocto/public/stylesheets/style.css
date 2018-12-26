@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#Form{
+ margin: auto;
+ padding-top: 30px;
+}
+
+.product-infor-menu{
+  font-weight: bold;
+  color: #003818;
+  font-size: 15px;
+}
+.product-input-data{
+  min-width: 90%;
+}
+#Data{
+  margin-top: 100px;
+}
+.img-data{
+    max-width: 100%;
+    max-height: 100%;
+}
+h1{
+    text-align: center;
+}
+#Button{
+    margin: auto;
+    width: 40%;
+}
+#Data-row button{
+    width: 35%;
+    margin: 5px 10px 5px 10px;
+    padding: auto;
+}
+#Data-row input{
+    width: 90%;
+}
