@@ -206,7 +206,7 @@ function editProduct() {
         url: '/editProduct',
         data: JSON.stringify(editData),
         contentType: "application/json",
-        success: function (data) {
+        success:  (data)=> {
             alert("edit success"+editData._id)
         }
     })

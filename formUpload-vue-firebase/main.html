@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-upload-vue</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-storage.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <form-upload></form-upload>
+        <product-list></product-list>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDfLnn1S3PU2qWhf55zMjBnA4-vVo7lOE0",
+            authDomain: "vue-form-teneocto.firebaseapp.com",
+            databaseURL: "https://vue-form-teneocto.firebaseio.com",
+            projectId: "vue-form-teneocto",
+            storageBucket: "vue-form-teneocto.appspot.com",
+            messagingSenderId: "54301910634"
+        };
+
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+    
+    <script src="/public/javascript/vue.js"></script>
+    <script src="/public/javascript/firebase.js"></script>
+</body>
+
+</html>
