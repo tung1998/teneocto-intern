@@ -29,7 +29,7 @@
           <tr class="row">
             <td class="col-sm-4 product-infor-menu">Price:</td>
             <td class="col-sm-8">
-              <input class="product-input-data" v-model="Price" name="Price">
+              <input class="product-input-data" v-model="Price" name="Price" type="number">
             </td>
           </tr>
           <tr class="row">

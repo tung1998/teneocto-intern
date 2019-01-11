@@ -44,7 +44,7 @@
             <td v-else class="col-md-1 data-category">{{product.Category}}</td>
             <!-- Price -->
             <td v-if="product.onEdit" class="col-md-1 data data-price">
-              <input v-model="product.Price">
+              <input v-model="product.Price" type="number">
             </td>
             <td v-else class="col-md-1 data data-price">{{product.Price}}</td>
             <!-- active -->
@@ -89,12 +89,8 @@ module.exports = {
       }
     },
     okClick(index) {
-      // console.log(this.listProducts[index])
-      if (confirm("edit product" + index)) {
-        console.log("1");
         updateProduct(this.listProducts[index])
         this.listProducts[index].onEdit = false;
-      }
     },
     cancelClick(index) {
       this.listProducts[index].onEdit = false;
